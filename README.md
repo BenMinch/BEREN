@@ -11,9 +11,9 @@ This repository has almost everything you need to get started, including all the
 A yml file has been provided to aid in setting up the conda environment. Simply run `conda env create -f BEREN_environment.yml` to set up your conda environment and `conda activate BEREN` to activate it.
 # Quick Start
 ### Running all modules on the example files
-We have provided a test metagenome with a sample coverage file to ensure BEREN works properly. To run BEREN you must open a terminal window within the folder where the `BEREN.py` script is along with the `hmm`, `scripts`, and `resources` folders. Here is how to run the example files with all modules `python BEREN.py -i Examples/example.fa -o Test -m all -cov Examples/example.coverage -t 6`. 
+<p>We have provided a test metagenome with a sample coverage file to ensure BEREN works properly. To run BEREN you must open a terminal window within the folder where the `BEREN.py` script is along with the `hmm`, `scripts`, and `resources` folders. Here is how to run the example files with all modules `python BEREN.py -i Examples/example.fa -o Test -m all -cov Examples/example.coverage -t 6`. <p></p>
 
-Running this should output a folder called `Test` that should have 
+Running this should output a folder called `Test` that should have around 313 markers, 2 high-quality genomes, 5 partial genomes, 20 NCLDV contigs, and 0 Preplasmiviricota viruses.
 
 ### A description of parameters and flags
 1. `-i`: This is the input metagenome assembly. (required)
@@ -30,5 +30,7 @@ Running this should output a folder called `Test` that should have
 
 <p>In addition, BEREN also searches for marker genes (MCPs) of newly discovered giant viruses such as Mirusviruses, Egovirales, and Mriyaviruses </p>
 
-<p> **Outputs** <br>
-`NCLDV_Markers.faa`: Protein file with all found marker genes. They are labeled "GVOGm". Refer to https://github.com/faylward/ncldv_markersearch </p>
+**Outputs** <br>
+`NCLDV_Markers.faa`: Protein file with all found marker genes. They are labeled "GVOGm". Refer to https://github.com/faylward/ncldv_markersearch for info on this naming scheme.<br>
+`NCLDV_Marker_PolB_Tree.nwk`: A treefile of NCLDV PolB proteins in newick format to be displayed on itol or elsewhere. The annotation file can be found in the resources folder. It is called `Tree_Labels.csv`.<br>
+`EGO_Mirus_Mriya_Markers.faa`: All of the markers for new viruses (MCPs). 
