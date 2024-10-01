@@ -1,3 +1,3 @@
 # BEREN
 A comprehensive bioinformatic workflow for giant virus and Preplasmiviricota retrieval from metagenomes
-<img src="https://github.com/BenMinch/BEREN/blob/main/Beren_logo.png" width=100% height=100%>
+<img src="https://github.com/BenMinch/BEREN/blob/main/Beren_logo.png" width=50% height=50%>
