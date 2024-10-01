@@ -31,4 +31,4 @@ Running this should output a folder called `Test` that should have
 <p>In addition, BEREN also searches for marker genes (MCPs) of newly discovered giant viruses such as Mirusviruses, Egovirales, and Mriyaviruses </p>
 
 <p> **Outputs** <br>
-`NCLDV_Markers.faa`: Protein file with all found marker genes. They are labeled "GVOGm". Refer to https://github.com/faylward/ncldv_markersearch 
+`NCLDV_Markers.faa`: Protein file with all found marker genes. They are labeled "GVOGm". Refer to https://github.com/faylward/ncldv_markersearch </p>
