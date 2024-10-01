@@ -11,7 +11,7 @@ This repository has almost everything you need to get started, including all the
 A yml file has been provided to aid in setting up the conda environment. Simply run `conda env create -f BEREN_environment.yml` to set up your conda environment and `conda activate BEREN` to activate it.
 # Quick Start
 ### Running all modules on the example files
-<p>We have provided a test metagenome with a sample coverage file to ensure BEREN works properly. To run BEREN you must open a terminal window within the folder where the `BEREN.py` script is along with the `hmm`, `scripts`, and `resources` folders. Here is how to run the example files with all modules `python BEREN.py -i Examples/example.fa -o Test -m all -cov Examples/example.coverage -t 6`.</p>
+<p> We have provided a test metagenome with a sample coverage file to ensure BEREN works properly. To run BEREN you must open a terminal window within the folder where the `BEREN.py` script is along with the `hmm`, `scripts`, and `resources` folders. Here is how to run the example files with all modules `python BEREN.py -i Examples/example.fa -o Test -m all -cov Examples/example.coverage -t 6`. <p>
 
 Running this should output a folder called `Test` that should have around 313 markers, 2 high-quality genomes, 5 partial genomes, 20 NCLDV contigs, and 0 Preplasmiviricota viruses.
 
