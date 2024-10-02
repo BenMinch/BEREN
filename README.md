@@ -89,7 +89,7 @@ BEREN is built on the shoulders of many other great bioinformatic tools. If you 
 8. [Metabat2](https://bitbucket.org/berkeleylab/metabat/src/master/)
 9. [Prodigal-GV](https://github.com/apcamargo/prodigal-gv)
 
-# Copywrite 
+# Copyright
 BEREN Copyright (C) 2024 Benjamin Minch
 
 This program is free software: you can redistribute it and/or modify it under the terms of the MIT License.
