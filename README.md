@@ -69,7 +69,7 @@ The KEGG database can be downloaded using the following command `wget https://ww
 `NCLDV_bins_AMG_bubble_plot.pdf`: A bubble plot of relevant metabolic genes in GVMAGs.<br>
 
 ## Virophage
-<p>The virophage module identifies Preplasmiviricota (virophages and Polinton-like viruses) genomes inside of your metagenome, classifies them as either virophage or PLV, and annotates the recovered genomes. Protein annotation is done using Pfam and a custom hmm database of protein clusters derived from [Bellas et al.](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00956-0) </p>
+The virophage module identifies Preplasmiviricota (virophages and Polinton-like viruses) genomes inside of your metagenome, classifies them as either virophage or PLV, and annotates the recovered genomes. Protein annotation is done using Pfam and a custom hmm database of protein clusters derived from [Bellas et al.](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00956-0)
 
 **Outputs**<br>
 `PLV_Good_Regions`: All the individual Preplasmiviricota genomes recovered.<br>
