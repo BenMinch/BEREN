@@ -42,7 +42,7 @@ This module gives you all the NCLDV contigs in your metagenome. You can treat th
 
 ## NCLDV_bins
 <p> The NCLDV_bins module can be used to recover high-quality and partial giant virus metagenome-assembled genomes (GVMAGs). GVMAGs are considered high quality if they contain a Capsid protein and 3 other marker genes. Partial genomes are those that contain at least one NCLDV marker gene and have a positive ViralRecall score. Both high-quality and partial GVMAGs are cleaned through a screening process to remove misbinned contigs or those that aren't of viral origin. </p>
-<p> After GVMAGs are recovered, taxonomic information will be predicted using [TIGTOG](https://github.com/anhd-ha/TIGTOG)</p>
+<p> After GVMAGs are recovered, taxonomic information will be predicted using TIGTOG (https://github.com/anhd-ha/TIGTOG)</p>
 
 **If you have Mirusviricota or Mriyavirus MAGs in your sample, they will be found among the partial bins.** <br>
 
@@ -52,4 +52,28 @@ This module gives you all the NCLDV contigs in your metagenome. You can treat th
 `Good_Bins_TIGTOG.prediction_result.tsv`: A file containing TIGTOG taxonomy of high-quality GVMAGs. <br>
 `Partial_Bins_TIGTOG.prediction_result.tsv`: A file containing TIGTOG taxonomy of partial GVMAGs. <br>
 `NCLDV_Genome_Summary.tsv`: A file with information on genome marker gene content, ViralRecall score, and decontamination stats. <br>
+
+## Metabolism
+<p> The metabolism module gives the user information about the proteins and functional potential stored within their GVMAGs and NCLDV contigs within their sample. This module runs protein prediction and annotation on the GVMAGs to find key metabolic genes. The user has the choice of which databases to use for protein annotation, but the default is the GVOG (giant virus orthologous genes) database. Pfam and KEGG are also available, but an additional download is required for KEGG. </p>
+
+**A note on downloading KEGG**<br>
+The KEGG database can be downloaded using the following command `wget https://www.genome.jp/ftp/db/kofam/profiles.tar.gz` and then extracting the HMM profile, renaming it to `KEGG.hmm` and placing it in the `hmm` folder.<br>
+
+**Outputs**<br>
+`All_bin_proteins_final.csv`: This contains all protein annotations for bins (high quality and partial if you use `-part` flag)<br>
+`All_contig_proteins_final.csv`: Protein annotations for NCLDV contigs.<br>
+`NCLDV_bins_metabolic_genes.csv`: Metabolic gene annotations of interest for bins.<br>
+`NCLDV_bins_AMG_bubble_plot.pdf`: A bubble plot of relevant metabolic genes in GVMAGs.<br>
+
+## Virophage
+<p>The virophage module identifies Preplasmiviricota (virophages and Polinton-like viruses) genomes inside of your metagenome, classifies them as either virophage or PLV, and annotates the recovered genomes. Protein annotation is done using Pfam and a custom hmm database of protein clusters derived from Bellas et al. (https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00956-0) </p>
+
+**Outputs**<br>
+`PLV_Good_Regions`: All the individual Preplasmiviricota genomes recovered.<br>
+`PLV_Good_Proteins`: All the predicted proteins for genomes. <br>
+`06_Virophage_final_affiliation.tsv`: Prediction of whether genome is virophage or PLV.<br>
+`PLV_VP_contigs.csv`: A summary file of marker genes found in each genome. <br>
+`Virophage_proteins_final.csv`: Annotations for all genome proteins.
+
+
 
