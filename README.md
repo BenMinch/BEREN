@@ -27,6 +27,7 @@ Running this should output a folder called `Test` that should have around 313 ma
 7. `-part`: A flag for whether or not to include partial genomes in metabolism analysis. The default is false.
 
 # Modules
+All main outputs are found in the `Final_Results` folder that is created inside your output directory. If you want to see intermediate files or MAGs that aren't giant viruses, you can look into individual module folders.
 ## NCLDV_marker
 <p>The NCLDV_marker module gives you the total diversity of giant viruses within your metagenome through the assessment of NCLDV marker genes (hallmark genes used for phylogenetic analysis). This module will identify these genes (Major capsid protein, DNA PolB, SFII, TFIIB, Topo2, RNAPS, RNAPL, A32, and VLTF3) and create a phylogeny for PolB using reference sequences for all NCLDV families and orders</p>
 
