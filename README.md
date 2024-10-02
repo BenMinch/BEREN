@@ -41,4 +41,15 @@ This module gives you all the NCLDV contigs in your metagenome. You can treat th
 `NCLDV_Contigs.fasta`: A single fasta file with all NCLDV contigs within it. Note, if you do this and bin module some of these contigs will likely overlap.
 
 ## NCLDV_bins
+<p> The NCLDV_bins module can be used to recover high-quality and partial giant virus metagenome-assembled genomes (GVMAGs). GVMAGs are considered high quality if they contain a Capsid protein and 3 other marker genes. Partial genomes are those that contain at least one NCLDV marker gene and have a positive ViralRecall score. Both high-quality and partial GVMAGs are cleaned through a screening process to remove misbinned contigs or those that aren't of viral origin. </p>
+<p> After GVMAGs are recovered, taxonomic information will be predicted using [TIGTOG](https://github.com/anhd-ha/TIGTOG)</p>
+
+**If you have Mirusviricota or Mriyavirus MAGs in your sample, they will be found among the partial bins.** <br>
+
+**Outputs**<br>
+`clean_genomes`: A folder containing all high-quality GVMAGs. <br>
+`clean_partial_genomes`: A folder containing all partial GVMAGs <br>
+`Good_Bins_TIGTOG.prediction_result.tsv`: A file containing TIGTOG taxonomy of high-quality GVMAGs. <br>
+`Partial_Bins_TIGTOG.prediction_result.tsv`: A file containing TIGTOG taxonomy of partial GVMAGs. <br>
+`NCLDV_Genome_Summary.tsv`: A file with information on genome marker gene content, ViralRecall score, and decontamination stats. <br>
 
