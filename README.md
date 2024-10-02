@@ -1,9 +1,11 @@
 # BEREN
-A comprehensive bioinformatic workflow for giant virus and Preplasmiviricota retrieval from metagenomes
+A comprehensive bioinformatic workflow for giant virus and Preplasmiviricota retrieval from metagenomes.
 <img src="https://github.com/BenMinch/BEREN/blob/main/Beren_logo.png" width=70% height=70%>
 ## What BEREN does
 BEREN is a comprehensive pipeline for accessing the diversity and functional potential of giant viruses (NCLDV) and Preplasmiviricota viruses (Polinton-like viruses, Virophages, Polintons) in metagenomes. It can be used to get overall diversity (marker genes), longer contigs, and genomes of these eukaryotic viruses and predict their functional potential and taxonomy. BEREN is modular so you can choose which modules to run on a given sample. 
 <img src="https://github.com/BenMinch/BEREN/blob/main/BEREN_pipeline.png" width=100% height=100%>
+# Citation
+Coming soon.
 # Installation
 ### 1. Cloning this repository
 This repository has almost everything you need to get started, including all the scripts and resources BEREN uses. Simply run `git clone https://github.com/BenMinch/BEREN` to clone the repository into your current folder.
@@ -66,7 +68,7 @@ The KEGG database can be downloaded using the following command `wget https://ww
 `NCLDV_bins_AMG_bubble_plot.pdf`: A bubble plot of relevant metabolic genes in GVMAGs.<br>
 
 ## Virophage
-<p>The virophage module identifies Preplasmiviricota (virophages and Polinton-like viruses) genomes inside of your metagenome, classifies them as either virophage or PLV, and annotates the recovered genomes. Protein annotation is done using Pfam and a custom hmm database of protein clusters derived from Bellas et al. (https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00956-0) </p>
+<p>The virophage module identifies Preplasmiviricota (virophages and Polinton-like viruses) genomes inside of your metagenome, classifies them as either virophage or PLV, and annotates the recovered genomes. Protein annotation is done using Pfam and a custom hmm database of protein clusters derived from [Bellas et al.](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00956-0) </p>
 
 **Outputs**<br>
 `PLV_Good_Regions`: All the individual Preplasmiviricota genomes recovered.<br>
@@ -75,5 +77,21 @@ The KEGG database can be downloaded using the following command `wget https://ww
 `PLV_VP_contigs.csv`: A summary file of marker genes found in each genome. <br>
 `Virophage_proteins_final.csv`: Annotations for all genome proteins.
 
+# Programs used in the Pipeline
+BEREN is built on the shoulders of many other great bioinformatic tools. If you want to use any part of the pipeline separately or want to know default parameters, check out their GitHub pages.<br>
+1. [NCLDV_Markersearch](https://github.com/faylward/ncldv_markersearch)
+2. [NuPhylo](https://github.com/BenMinch/NuPhylo)
+3. [ViralRecall](https://github.com/faylward/viralrecall)
+4. [Hmmer](https://github.com/EddyRivasLab/hmmer)
+5. [AnnoMazing](https://github.com/BenMinch/AnnoMazing)
+6. [TIGTOG](https://github.com/anhd-ha/TIGTOG)
+7. [Virophage_affiliation](https://github.com/simroux/ICTV_VirophageSG/tree/main)
+8. [Metabat2](https://bitbucket.org/berkeleylab/metabat/src/master/)
+9. [Prodigal-GV](https://github.com/apcamargo/prodigal-gv)
 
+# Copywrite 
+BEREN Copyright (C) 2024 Benjamin Minch
 
+This program is free software: you can redistribute it and/or modify it under the terms of the MIT License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the MIT License for more details.
