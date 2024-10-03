@@ -78,8 +78,10 @@ The virophage module identifies Preplasmiviricota (virophages and Polinton-like 
 `PLV_VP_contigs.csv`: A summary file of marker genes found in each genome. <br>
 `Virophage_proteins_final.csv`: Annotations for all genome proteins.
 
+# Batch Mode
+A batch script has been provided to run BEREN on many assemblies simultaneously. The only input for this program is a reference file that has full paths to each sample, an output folder, the modes you want to run for each sample (separated by a, if specifying multiple), and the coverage file absolute path if running NCLDV_bins module. An example of this file has been provided in the examples folder.
 # Programs used in the Pipeline
-BEREN is built on the shoulders of many other great bioinformatic tools. If you want to use any part of the pipeline separately or want to know default parameters, check out their GitHub pages.<br>
+BEREN is built on the shoulders of many other great bioinformatic tools. Check out their GitHub pages to see if you want to use any part of the pipeline separately or want to know the default parameters.<br>
 1. [NCLDV_Markersearch](https://github.com/faylward/ncldv_markersearch)
 2. [NuPhylo](https://github.com/BenMinch/NuPhylo)
 3. [ViralRecall](https://github.com/faylward/viralrecall)
