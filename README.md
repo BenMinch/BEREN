@@ -8,16 +8,7 @@ BEREN is a comprehensive pipeline for accessing the diversity and functional pot
 # Citation
 Coming soon.
 # Installation
-### 1. Cloning this repository
-This repository has almost everything you need to get started, including all the scripts and resources BEREN uses. Simply run ```git clone https://github.com/BenMinch/BEREN``` to clone the repository into your current folder.
-### 2. Setting up the conda environment
-A yml file has been provided to aid in setting up the conda environment. Simply run `conda env create -f BEREN_environment.yml` to set up your conda environment and `conda activate BEREN` to activate it.
-# Quick Start
-### Running all modules on the example files
-We have provided a test metagenome with a sample coverage file to ensure BEREN works properly. To run BEREN you must open a terminal window within the folder where the `BEREN.py` script is along with the `hmm`, `scripts`, and `resources` folders. Here is how to run the example files with all modules `python BEREN.py -i Examples/example.fa -o Test -m all -cov Examples/example.coverage -t 6`.
-
-Running this should output a folder called `Test` that should have around 313 markers, 2 high-quality genomes, 5 partial genomes, 20 NCLDV contigs, and 0 Preplasmiviricota viruses.
-
+See [Gitlab](https://gitlab.com/benminch1/BEREN) page for installation.
 ### A description of parameters and flags
 1. `-i`: This is the input metagenome assembly. (required)
 2. `-cov`: This is the coverage file in metabat2 format. This is only required for metagenomic binning in the NCLDV_bins module. This file can be generated using coverm.
