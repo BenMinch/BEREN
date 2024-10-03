@@ -1,5 +1,5 @@
 # BEREN
-**The main repository for BEREN is hosted on [Gitlab](https://gitlab.com/benminch1/BEREN)**
+**The main repository for BEREN is hosted on [Gitlab](https://gitlab.com/benminch1/BEREN)** <br>
 A comprehensive bioinformatic workflow for giant virus and Preplasmiviricota retrieval from metagenomes.
 <img src="https://github.com/BenMinch/BEREN/blob/main/Beren_logo.png" width=70% height=70%>
 ## What BEREN does
