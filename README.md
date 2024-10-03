@@ -8,7 +8,7 @@ BEREN is a comprehensive pipeline for accessing the diversity and functional pot
 Coming soon.
 # Installation
 ### 1. Cloning this repository
-This repository has almost everything you need to get started, including all the scripts and resources BEREN uses. Simply run `git clone https://github.com/BenMinch/BEREN` to clone the repository into your current folder.
+This repository has almost everything you need to get started, including all the scripts and resources BEREN uses. Simply run ```git clone https://github.com/BenMinch/BEREN``` to clone the repository into your current folder.
 ### 2. Setting up the conda environment
 A yml file has been provided to aid in setting up the conda environment. Simply run `conda env create -f BEREN_environment.yml` to set up your conda environment and `conda activate BEREN` to activate it.
 # Quick Start
